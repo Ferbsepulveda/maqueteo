@@ -1,0 +1,187 @@
+/*
+Theme Name: Tema nuevo
+Author: Fernanda sepulveda
+Author URI: https://wordpress.org/
+Description: Version de prueba tema anulen.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+Text Domain: tema-nuevo
+*/
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+      url("fonts/roboto-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/** Estilo para el menú de navegacion*/
+.header .nav-link
+{
+    color: black;
+    /*margin-right: 20px;*/
+    font-family: roboto-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+/*color: #FFFFFF;*/
+}
+
+/*  Estilo para la página activa
+.current_page_item .nav-link{
+    border-bottom: 3px solid #F9B233;
+}
+
+*/
+
+.nav-link:active{
+    border-bottom: 3px solid #F9B233;
+}
+
+/*
+#nav_principal{
+    background-image: url('images/Color.png'), url('images/Imagen.png');
+    background-blend-mode: normal;
+}
+*/
+
+
+.footer .container-fluid{
+    background-color: black;
+}
+
+.footer .nav-link{
+    color:white;
+}
+
+
+
+/* Estilos para página Home.php  */
+/*
+.home .contenedor-imagen{
+    background-image: url('images/Color-cortado.png'), url('images/Imagen-cortada.png');
+    background-blend-mode: normal;
+    background-size:cover;
+    background-position: center;
+    
+}
+*/
+
+.home .titulo-home h2::first-letter{
+    text-transform: uppercase
+}
+
+.home .titulo-home h2
+{
+    font-family: roboto-regular;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #454342;
+}
+
+
+.home .parrafo-home{
+    font-family: roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.home .fondo{
+    background: url(images/Color.png), url(images/Imagen.png);
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -44px;
+    right: 50px;
+    z-index: 1;
+    }
+    
+.home .fondo .imagen-home .imagen{
+    padding-left:100px;
+    padding-top: 235px;
+    padding-block-end: 32%; /* Con esto aumento el tamaño DE LA IMAGEN DE FONDO */
+}
+    
+.navbar{
+    background: transparent;
+    z-index: 2;
+}
+    
+
+.home .boton-vm a.btn,
+.demo-home .boton-vm a.btn{
+    border-radius: 1.25rem;
+    background:linear-gradient(242.17deg, #E94E1B 5.27%, #F9B233 94.73%);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border: 0;
+    font-family: roboto-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.demo-home{
+    background: linear-gradient(310.11deg, rgba(138, 205, 205, 0.6) 0%, rgba(51, 70, 151, 0.6) 100%), url('images/Fondo-demo-home.png');
+    background-blend-mode: normal;
+    background-size: cover;
+}
+
+.demo-home .titulo-home{
+    font-family: roboto-regular;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.demo-home .parrafo-home{
+    font-family: roboto-regular;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.demo-home .contenedor-imagen img{
+    position: absolute;
+    top: -8em;
+}
+
+.noticias-home .titulo h2{
+    font-family: roboto-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;
+    color: #454342;
+}
+
+.noticias-home .mini-resumen{
+    font-family: roboto-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: justify;
+    color: #000000;
+}
+
